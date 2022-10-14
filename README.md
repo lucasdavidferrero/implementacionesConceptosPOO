@@ -1,3 +1,7 @@
 # Implementaciones de conceptos POO en Java, Python & Dart.
 
-## UTN FRRA - TUP 1er año - Programación 2 (2022)
+## UTN FRRA, Tecnicatura Universitaria en Programación
+
+Materia: Programación II.
+Docente: Ing. Jorge R. Duarte .
+Alumnos: Lautaro Debarba, Ferrero Lucas, Mareniov Brian, César Flores.
