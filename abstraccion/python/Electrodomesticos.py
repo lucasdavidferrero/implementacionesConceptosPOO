@@ -13,7 +13,7 @@ class Lavadora:
         self.capacidadKg = capacidad
 
     def agregarRopa(self, pesoPrendaKg):
-        if (pesoPrendaKg < self.capacidadKg):
+        if (pesoPrendaKg < self.capacidadMaximaKg):
             self.cargaActualKg += pesoPrendaKg
 
     def sacarRopa(self):
