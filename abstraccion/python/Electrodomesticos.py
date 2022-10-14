@@ -10,7 +10,7 @@ class Lavadora:
         self.marca = marca
         self.modelo = modelo
         self.nroSerie = nroSerie
-        self.capacidadKg = capacidad
+        self.capacidadMaximaKg = capacidad
 
     def agregarRopa(self, pesoPrendaKg):
         if (pesoPrendaKg < self.capacidadMaximaKg):

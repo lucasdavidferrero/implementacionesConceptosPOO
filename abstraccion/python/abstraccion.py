@@ -8,4 +8,4 @@ drean.agregarRopa(0.55)
 drean.agregarRopa(0.22)
 
 print('Marca: ', drean.marca)
-print('carga actual: ',drean.cargaActualKg)
+print('carga actual: ', drean.cargaActualKg)
