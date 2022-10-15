@@ -1,5 +1,5 @@
 class Electrodomestico:
-    """Clase abstracta"""
+    """Clase abstracta (no se instancia)"""
     marca = ''
     modelo = ''
     nroSerie = 0
@@ -14,7 +14,7 @@ class Lavadora(Electrodomestico):
     capacidadMaximaKg = 0
     cargaActualKg = 0
 
-    # Se invoca el constructor de la clase Base
+    # Se invoca el constructor de la clase Base.
     def __init__(self, marca, modelo, nroSerie, capacidad):
         Electrodomestico.__init__(self, marca, modelo, nroSerie)
         self.capacidadMaximaKg = capacidad
