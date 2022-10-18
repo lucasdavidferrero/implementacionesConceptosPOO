@@ -1,7 +1,7 @@
 class Lavadora:
     """Representa una Lavadora"""
     marca = ''
-    modelo = 0
+    modelo = ''
     nroSerie = 0
     capacidadMaximaKg = 0
     cargaActualKg = 0
