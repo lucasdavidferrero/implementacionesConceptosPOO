@@ -1,4 +1,5 @@
 class Lavadora {
+  // Si la variable de instancia no es opcional, se debe inicializar.
   String marca = "";
   String modelo = "";
   int nroSerie = 0;
