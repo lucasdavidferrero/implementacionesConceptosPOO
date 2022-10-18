@@ -13,4 +13,12 @@ class Lavadora {
     this.nroSerie = nroSerie;
     this.capacidadMaximaKg = capacidadMaximaKg;
   }
+
+  void agregarRopa(double pesoPrendaKg) {
+    // ...
+  }
+
+  void sacarRopa() {
+    // ...
+  }
 }
