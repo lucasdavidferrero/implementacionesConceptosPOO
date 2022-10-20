@@ -1,11 +1,5 @@
 class Lavadora:
-    """Representa una Lavadora"""
-    Variables de clase
-    marca = ''
-    modelo = ''
-    nroSerie = 0
-    capacidadMaximaKg = 0
-    cargaActualKg = 0
+    # Variables de clase
 
     def __init__(self, marca, modelo, nroSerie, capacidad):
         # Variables de instancia
@@ -13,6 +7,7 @@ class Lavadora:
         self.modelo = modelo
         self.nroSerie = nroSerie
         self.capacidadMaximaKg = capacidad
+        self.cargaActualKg = 0
 
     def agregarRopa(self, pesoPrendaKg):
         if (pesoPrendaKg < self.capacidadMaximaKg):
