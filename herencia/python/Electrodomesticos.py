@@ -1,5 +1,5 @@
 class Electrodomestico:
-    """Clase abstracta (no se instancia)"""
+    """Clase abstracta"""
     marca = ''
     modelo = ''
     nroSerie = 0

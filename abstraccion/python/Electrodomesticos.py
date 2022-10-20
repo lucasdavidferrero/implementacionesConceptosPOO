@@ -1,5 +1,6 @@
 class Lavadora:
     """Representa una Lavadora"""
+    Variables de clase
     marca = ''
     modelo = ''
     nroSerie = 0
@@ -7,6 +8,7 @@ class Lavadora:
     cargaActualKg = 0
 
     def __init__(self, marca, modelo, nroSerie, capacidad):
+        # Variables de instancia
         self.marca = marca
         self.modelo = modelo
         self.nroSerie = nroSerie
