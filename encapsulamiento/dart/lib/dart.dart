@@ -1,3 +1,4 @@
+// Dart posee Getters & Setters implícitos para cada variable de instancia
 class Proveedor {
   String _nombre = '';
   String _Cbu = '';
@@ -13,4 +14,8 @@ class Proveedor {
 
   double get deuda => _deuda;
   set deuda(double deuda) => _deuda = deuda;
+
+  void _metodoPrivado() {
+    print('Método privado.');
+  }
 }
