@@ -1,7 +1,5 @@
 # Python no soporta la sobrecarga de métodos.
 # Existen alternativas para implementar esta característica con argumentos opcionales.
-from threading import local
-
 
 class Empleado:
 
