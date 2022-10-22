@@ -4,7 +4,7 @@ class Animal:
         self.peso = peso
         self.velocidadMovimientoMaxima = velocidadMovimientoMaxima
 
-    def desplazarse(self):
+    def desplazarse(self): # Método abstracto
         pass
 
 class Carnivoro(Animal):
