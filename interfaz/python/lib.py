@@ -1,4 +1,4 @@
-# Pyhton no dispone de interfaces. 
+# Pyhton no dispone de interfaces.
 # Se podrían crear clases abstractas y utlizar la herencia múltiple de Python para "simular" una interfaz.
 class AccionesBasicas:
     def comer(self):

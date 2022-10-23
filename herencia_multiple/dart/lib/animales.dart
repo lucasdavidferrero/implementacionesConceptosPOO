@@ -8,22 +8,28 @@ abstract class Animal {
   void desplazarse(); // Método abstracto
 }
 
-mixin Carnivoro on Animal {
+abstract class Carnivoro extends Animal {
+  Carnivoro(String especie, double peso, double velocidadMovimientoMaxima)
+      : super(especie, peso, velocidadMovimientoMaxima);
+
   void cazar();
   void comerPresa();
 }
 
-mixin Herbivoro on Animal {
+abstract class Herbivoro extends Animal {
+  Herbivoro(String especie, double peso, double velocidadMovimientoMaxima)
+      : super(especie, peso, velocidadMovimientoMaxima);
+
   void comerPlanta();
   void comerFruto();
 }
 
-abstract class Omnivoro extends Animal with Herbivoro, Carnivoro {
+abstract class Omnivoro extends Animal implements Carnivoro, Herbivoro {
   Omnivoro(String especie, double peso, double velocidadMovimientoMaxima)
       : super(especie, peso, velocidadMovimientoMaxima);
 }
 
-class Puma extends Animal with Carnivoro {
+class Puma extends Carnivoro {
   Puma(String especie, double peso, double velocidadMovimientoMaxima)
       : super(especie, peso, velocidadMovimientoMaxima);
 
@@ -43,7 +49,7 @@ class Puma extends Animal with Carnivoro {
   }
 }
 
-class Caballo extends Animal with Herbivoro {
+class Caballo extends Herbivoro {
   Caballo(String especie, double peso, double velocidadMovimientoMaxima)
       : super(especie, peso, velocidadMovimientoMaxima);
 
@@ -63,7 +69,7 @@ class Caballo extends Animal with Herbivoro {
   }
 }
 
-class Oso extends Animal with Carnivoro, Herbivoro {
+class Oso extends Omnivoro {
   Oso(String especie, double peso, double velocidadMovimientoMaxima)
       : super(especie, peso, velocidadMovimientoMaxima);
 
